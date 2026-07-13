@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>img/net.png</ImageUrl>
+		<!--<NavigateUrl>www.google.com</NavigateUrl>
+		<AlternateText>google</AlternateText>
+		<Impression>3 </Impression>
+		<Keywords>.NET </Keywords>-->
+	</Ad>
+
+	<Ad>
+		<ImageUrl>img/daisy trio.jpg</ImageUrl>
+	</Ad>
+	
+</Advertisements>
