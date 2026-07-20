@@ -70,5 +70,10 @@ namespace WebApplication1
         {
             Label2.Text = "YOUR CITY" + ListBox1.SelectedItem;
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

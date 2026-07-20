@@ -94,7 +94,46 @@
         <p>
             &nbsp;</p>
         <p>
+            <asp:Label ID="Label3" runat="server" Text="NAME"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="NAMETXT" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="NAMETXT" ErrorMessage="NAME IS REQUIRED" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
+        <p>
+            <asp:Label ID="Label4" runat="server" Text="PASSWORD"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="PWDTXT" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="PWDTXT" ErrorMessage="PASSWORD*" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
+        <p>
+            <asp:Label ID="Label5" runat="server" Text="CONFIRM PAASWORD"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="CNFMPSWTXT" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="CNFMPSWTXT" ErrorMessage="REENTER PASSWORD" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
+        <p>
+            <asp:Label ID="Label6" runat="server" Text="AGE"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="AGETXT" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="AGETXT" ErrorMessage="AGE IS REQUIRED" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
+        <p>
+            <asp:Label ID="Label7" runat="server" Text="EMAIL"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="EMAILTXT" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="EMAILTXT" ErrorMessage="EMAIL IS REQUIRED" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
+        <p>
+            <asp:Label ID="Label8" runat="server" Text="CONTACT NO"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="CONTACTTXT" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="CONTACTTXT" ErrorMessage="CONTACT IS REQUIRED" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
+        <p>
             &nbsp;</p>
+        <p>
+            <asp:Button ID="Button1" runat="server" Text="REGISTER" />
+        </p>
         <p>
             &nbsp;</p>
         <p>
