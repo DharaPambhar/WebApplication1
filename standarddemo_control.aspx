@@ -9,6 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            PAMBHAR DHARA<br />
+            <br />
+            <br />
             CALENDER CONTROL DEMO</div>
         <asp:Calendar ID="Calendar1" runat="server" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" Height="200px" OnSelectionChanged="Calendar1_SelectionChanged" ShowGridLines="True" Width="220px">
             <DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="1px" />
@@ -20,15 +23,14 @@
             <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
         </asp:Calendar>
         <br />
-        <br />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
         <br />
         <br />
         <p>
-            RADIO BUTTON</p>
+            RADIO BUTTON </p>
         <p>
             <asp:RadioButton ID="MALE_btn" runat="server" Text="MALE" />
         </p>
@@ -81,6 +83,8 @@
         <p>
             &nbsp;</p>
         <p>
+            PAMBHAR DHARA C.</p>
+        <p>
             &nbsp;</p>
         <p>
             ADROTATOR CONTROL</p>
@@ -90,7 +94,11 @@
         <p>
             &nbsp;</p>
         <p>
-            VALIDATION CONTROL</p>
+            &nbsp;</p>
+        <p>
+            PAMBHAR DHARA</p>
+        <p>
+            VALIDATION CONTROL&nbsp; </p>
         <p>
             &nbsp;</p>
         <p>
@@ -98,6 +106,7 @@
 &nbsp;:
             <asp:TextBox ID="NAMETXT" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="NAMETXT" ErrorMessage="NAME IS REQUIRED" ForeColor="Red"></asp:RequiredFieldValidator>
+        &nbsp;
         </p>
         <p>
             <asp:Label ID="Label4" runat="server" Text="PASSWORD"></asp:Label>
@@ -126,7 +135,7 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="EMAILTXT" ErrorMessage="EMAIL IS REQUIRED" ForeColor="Red"></asp:RequiredFieldValidator>
 &nbsp;
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="EMAILTXT" ErrorMessage="EMAIL INVALID" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-        </p>
+        &nbsp;</p>
         <p>
             <asp:Label ID="Label8" runat="server" Text="CONTACT NO"></asp:Label>
 &nbsp;:
@@ -137,44 +146,27 @@
         <p>
             &nbsp;</p>
         <p>
-            <asp:Button ID="Button1" runat="server" Text="REGISTER" />
+            <asp:Button ID="Button1" runat="server" Text="REGISTER" OnClick="Button1_Click" />
         </p>
         <p>
             &nbsp;</p>
         <p>
             &nbsp;</p>
         <p>
-            &nbsp;</p>
+            PAMBHAR DHARA</p>
         <p>
             &nbsp;</p>
         <p>
-            &nbsp;</p>
+            FILE UPLOAD CONTROL</p>
         <p>
-            &nbsp;</p>
+            <asp:FileUpload ID="FileUpload1" runat="server" />
+        </p>
         <p>
-            &nbsp;</p>
+            <asp:Button ID="BUTTON" runat="server" OnClick="BUTTON_Click" Text="UPLOAD" CausesValidation="False"/>
+        </p>
         <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
+            <asp:Label ID="Labell" runat="server" Text="Label"></asp:Label>
+        </p>
         <p>
             &nbsp;</p>
         <p>
@@ -194,19 +186,5 @@
         <p>
             &nbsp;</p>
     </form>
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <p>
-        VALIDATION CONTROL</p>
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-</body>
+    </body>
 </html>

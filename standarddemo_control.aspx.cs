@@ -75,5 +75,26 @@ namespace WebApplication1
         {
 
         }
+
+        protected void BUTTON_Click(object sender, EventArgs e)
+        {
+            if (FileUpload1.HasFile)
+            {
+                string path = Server.MapPath("~/img/") + FileUpload1.FileName;
+                FileUpload1.SaveAs(path);
+
+                Labell.Text = "File uploaded Successfully!";
+            }
+            else
+            {
+                Labell.Text = "please select a file to upload";
+            }
+
+            }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+    }
