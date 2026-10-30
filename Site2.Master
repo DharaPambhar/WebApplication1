@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="Site2.Master.cs"
+    Inherits="WebApplication1.Site2" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>HDFC Loans - Next Step to Dream</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+.main-container {
+    width: 700px;
+    max-width: 100%;
+    border: 2px solid #b5b5b5;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+        .header-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 5px;
+            border-bottom: 2px solid #b5b5b5;
+        }
+
+        .login-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px;
+            border-bottom: 2px solid #b5b5b5;
+            font-size: 20px;
+        }
+
+        .logout-button {
+            padding: 7px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .navigation {
+            display: flex;
+            border-bottom: 2px solid #b5b5b5;
+        }
+
+        .navigation a {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px;
+            border-right: 2px solid #b5b5b5;
+            text-decoration: underline;
+            white-space: nowrap;
+        }
+
+        .content-area {
+            min-height: 25px;
+            padding: 5px;
+            border-bottom: 2px solid #b5b5b5;
+        }
+
+        .content-inner {
+            min-height: 20px;
+            border: 2px solid #eeeeee;
+            padding: 5px;
+        }
+
+        .footer {
+            padding: 5px 7px;
+            font-size: 20px;
+        }
+
+        .footer h2 {
+            font-size: 24px;
+            margin: 0 0 22px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <div class="main-container">
+
+            <div class="header-title">
+                HDFC Loans - Next Step to Dream
+            </div>
+
+            <div class="login-row">
+                <span>
+                    Logged In:
+                    <asp:Label ID="lblUserEmail"
+                        runat="server"
+                        Text="UserEmail">
+                    </asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+
+                <asp:Button ID="btnLogout"
+                    runat="server"
+                    Text="Logout"
+                    a href ="Login.cs"
+                    CssClass="logout-button"
+                    OnClick="btnLogout_Click" />
+            </div>
+
+            <div class="navigation">
+                <a href="Home.aspx">Home</a>
+                <a href="NewApplication.aspx">New Application</a>
+                <a href="UpdateApplication.aspx">Update Application</a>
+                <a href="RemoveApplication.aspx">Remove Application</a>
+                <a href="ViewAll.aspx">View All</a>
+            </div>
+
+            <div class="content-area">
+                <div class="content-inner">
+                    <asp:ContentPlaceHolder
+                        ID="ContentPlaceHolder1"
+                        runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <div class="footer">
+                <h2>Contact Us:</h2>
+
+                HDFC Loans Systems,<br />
+                Mumbai, Maharashtra, India
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>
+

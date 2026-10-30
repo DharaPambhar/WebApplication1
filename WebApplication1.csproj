@@ -67,12 +67,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\HDFC-Loans.mdf" />
+    <Content Include="App_Data\HDFC-Loans_log.ldf">
+      <DependentUpon>HDFC-Loans.mdf</DependentUpon>
+    </Content>
     <Content Include="file_control.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="home1.aspx" />
     <Content Include="img\daisy trio.jpg" />
     <Content Include="img\net.png" />
     <Content Include="img\abc.jpeg" />
+    <Content Include="Login.aspx" />
     <Content Include="multiview.aspx" />
+    <Content Include="NewApplication.aspx" />
+    <Content Include="RemoveApplication.aspx" />
     <Content Include="standarddemo_control.aspx" />
+    <Content Include="UpdateApplication.aspx" />
+    <Content Include="ViewAll.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="XMLFile1.xml" />
@@ -86,6 +101,27 @@
     <Compile Include="file_control.aspx.designer.cs">
       <DependentUpon>file_control.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home1.aspx.cs">
+      <DependentUpon>home1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home1.aspx.designer.cs">
+      <DependentUpon>home1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="multiview.aspx.cs">
       <DependentUpon>multiview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,13 +129,55 @@
     <Compile Include="multiview.aspx.designer.cs">
       <DependentUpon>multiview.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NewApplication.aspx.cs">
+      <DependentUpon>NewApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewApplication.aspx.designer.cs">
+      <DependentUpon>NewApplication.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveApplication.aspx.cs">
+      <DependentUpon>RemoveApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemoveApplication.aspx.designer.cs">
+      <DependentUpon>RemoveApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
     <Compile Include="standarddemo_control.aspx.cs">
       <DependentUpon>standarddemo_control.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="standarddemo_control.aspx.designer.cs">
       <DependentUpon>standarddemo_control.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateApplication.aspx.cs">
+      <DependentUpon>UpdateApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateApplication.aspx.designer.cs">
+      <DependentUpon>UpdateApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAll.aspx.cs">
+      <DependentUpon>ViewAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAll.aspx.designer.cs">
+      <DependentUpon>ViewAll.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -111,6 +189,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="Site2.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

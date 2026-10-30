@@ -17,7 +17,7 @@ namespace WebApplication1
 
         protected void btnPrevious1_Click(object sender, EventArgs e)
         {
-            MultiView1.ActiveViewIndex = 0;0
+            MultiView1.ActiveViewIndex = 0;
         }
 
         protected void btnNext2_Click(object sender, EventArgs e)
